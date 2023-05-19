@@ -1,0 +1,74 @@
+<html>
+
+<body>
+    <link href="/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="/css/style.css" rel='stylesheet' type='text/css' />
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" style="background-color: #1C00ff00;">
+        <div class="container">
+            <a class="navbar-brand" href="layout.html">
+                <img src="/img/logo.png" style="width: 90px; height: 55px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for('home') }}">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tamplates/crop1.html">Crop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tamplates/crop-res.html">Fertilizer</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container py-2 mx-auto my-50 h-10 " style="margin: 9rem;">
+        <div class="row">
+            <div class="col-sm py-2 py-md-3">
+                <div class="card card-body" style="justify-content: center; background-color:blanchedalmond">
+                    <p class="text-center" style="color: black; font-size: 20px;">{{ recommendation }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-5">
+        <div class="container py-md-3">
+            <!-- logo -->
+            <h2 class="logo2 text-center">
+                <a href="{{ url_for('home') }}">
+                    GrowWise
+                </a>
+            </h2>
+            <!-- //logo -->
+            <!-- address -->
+            <div class="contact-left-footer mt-4">
+
+
+
+
+
+                <!-- <a href="community.html">Community</a> -->
+                </p>
+            </div>
+            <div class="w3l-copy text-center">
+                <p class="text-da">An Environmental Intelligence Startup<br> </p>
+            </div>
+            <p class="homelogo">
+            <p>Made by The Code Crusaders</p>
+
+
+        </div>
+    </footer>
+</body </html>
